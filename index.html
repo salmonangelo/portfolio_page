@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SALMON ANGELO S. - Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body class="bg-slate-900 text-gray-100 antialiased">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 bg-slate-800/95 backdrop-blur z-30 border-b border-slate-700">
+    <nav class="container mx-auto flex items-center justify-between p-4" role="navigation" aria-label="Main Navigation">
+      <div class="flex items-center space-x-3">
+        <a href="#home" class="text-xl font-semibold text-white">SALMON ANGELO S.</a>
+
+        <!-- Desktop Links -->
+        <ul id="nav-links" class="hidden md:flex space-x-6 ml-6">
+          <li><a class="nav-link hover:text-red-400 transition" href="#home">Home</a></li>
+          <li><a class="nav-link hover:text-red-400 transition" href="#about">About</a></li>
+          <li><a class="nav-link hover:text-red-400 transition" href="#skills">Skills</a></li>
+          <li><a class="nav-link hover:text-red-400 transition" href="#projects">Projects</a></li>
+          <li><a class="nav-link hover:text-red-400 transition" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Actions & Mobile -->
+      <div class="flex items-center space-x-4">
+        <a href="#projects" class="hidden md:inline-block bg-gradient-to-br from-red-600 to-violet-700 text-white px-4 py-2 rounded-md shadow-sm hover:brightness-95 transition">View Projects</a>
+        <button id="hamburger" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden p-2 rounded-md focus:outline-none focus:ring focus:ring-violet-500/40">
+          <!-- hamburger icon -->
+          <svg id="hamburger-open" class="w-6 h-6 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="hamburger-close" class="w-6 h-6 hidden text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden absolute left-0 right-0 top-full bg-slate-800 shadow transform origin-top transition-all scale-y-0">
+        <ul class="flex flex-col p-4 space-y-2">
+          <li><a class="nav-link block py-2 text-gray-100 hover:text-red-400" href="#home">Home</a></li>
+          <li><a class="nav-link block py-2 text-gray-100 hover:text-red-400" href="#about">About</a></li>
+          <li><a class="nav-link block py-2 text-gray-100 hover:text-red-400" href="#skills">Skills</a></li>
+          <li><a class="nav-link block py-2 text-gray-100 hover:text-red-400" href="#projects">Projects</a></li>
+          <li><a class="nav-link block py-2 text-gray-100 hover:text-red-400" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center">
+      <div class="container mx-auto px-4 py-16 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight opacity-0 transform translate-y-4 animate-fade-in">SALMON ANGELO S.</h1>
+          <p class="text-lg text-slate-300 opacity-0 transform translate-y-4 animate-fade-in delay-100">
+            Front-end developer passionate about creating clear, accessible interfaces.
+          </p>
+          <div class="flex gap-4 mt-4 opacity-0 transform translate-y-4 animate-fade-in delay-200">
+            <a href="#projects" class="px-5 py-3 bg-gradient-to-br from-red-600 to-violet-700 text-white rounded-md shadow hover:brightness-95">View Projects</a>
+            <a href="#contact" class="px-5 py-3 border border-violet-500 text-violet-300 rounded-md hover:bg-slate-800">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Photo placeholder -->
+        <div class="flex justify-center">
+          <div class="w-56 h-56 bg-slate-700 rounded-full flex items-center justify-center border-2 border-dashed border-violet-600/40" aria-hidden="true">
+            <img src="assets/images/salmon.jpg" alt="Photo placeholder for SALMON ANGELO S." class="w-52 h-52 rounded-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-16 bg-slate-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-100">About</h2>
+        <p class="text-slate-300">Hello — I'm Salmon. I build user interfaces with HTML, Tailwind CSS and vanilla JavaScript. This is a placeholder paragraph for your about section.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-16 bg-slate-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-100">Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">HTML</div>
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">Tailwind</div>
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">JavaScript</div>
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">Accessibility</div>
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">Responsive</div>
+          <div class="p-4 bg-slate-800 text-slate-100 rounded shadow">UX</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-16 bg-slate-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold mb-6 text-gray-100">Projects</h2>
+
+        <!-- Project Grid -->
+        <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Project Card 1 -->
+          <article class="project-card bg-slate-800 rounded-lg shadow p-4 flex flex-col" data-project="1">
+            <div class="h-48 bg-slate-700 rounded overflow-hidden mb-4">
+              <img src="assets/images/project_1.jpg" alt="Project 1" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-100">Project One</h3>
+            <p class="text-slate-300 mt-2 flex-1">Short description of project one. This is placeholder text.</p>
+            <div class="mt-4">
+              <button class="open-project px-4 py-2 bg-gradient-to-br from-red-600 to-violet-700 text-white rounded" data-project="1">View Details</button>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card bg-slate-800 rounded-lg shadow p-4 flex flex-col" data-project="2">
+            <div class="h-48 bg-slate-700 rounded overflow-hidden mb-4">
+              <img src="assets/images/project_2.jpg" alt="Project 2" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-100">Project Two</h3>
+            <p class="text-slate-300 mt-2 flex-1">Short description of project two. This is placeholder text.</p>
+            <div class="mt-4">
+              <button class="open-project px-4 py-2 bg-gradient-to-br from-red-600 to-violet-700 text-white rounded" data-project="2">View Details</button>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card bg-slate-800 rounded-lg shadow p-4 flex flex-col" data-project="3">
+            <div class="h-48 bg-slate-700 rounded overflow-hidden mb-4">
+              <img src="assets/images/project_3.jpg" alt="Project 3" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="text-lg font-semibold text-gray-100">Project Three</h3>
+            <p class="text-slate-300 mt-2 flex-1">Short description of project three. This is placeholder text.</p>
+            <div class="mt-4">
+              <button class="open-project px-4 py-2 bg-gradient-to-br from-red-600 to-violet-700 text-white rounded" data-project="3">View Details</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Carousel area (example single carousel for project images) -->
+        <div class="mt-12">
+          <h3 class="text-xl font-semibold mb-4 text-gray-100">Featured Carousel</h3>
+          <div id="carousel" class="relative max-w-3xl mx-auto">
+            <div class="overflow-hidden rounded-lg">
+              <ul class="carousel-track flex transition-transform duration-500">
+                <li class="carousel-slide w-full flex-shrink-0">
+                  <img src="assets/images/carousel_1.webp" alt="carousel 1" class="w-full h-64 object-cover" />
+                </li>
+                <li class="carousel-slide w-full flex-shrink-0">
+                  <img src="assets/images/caruosel_2.jpg" alt="carousel 2" class="w-full h-64 object-cover" />
+                </li>
+                <li class="carousel-slide w-full flex-shrink-0">
+                  <img src="assets/images/caruosel_3.jpg" alt="carousel 3" class="w-full h-64 object-cover" />
+                </li>
+              </ul>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 bg-slate-800/70 text-gray-100 p-2 rounded shadow">❮</button>
+            <button class="carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 bg-slate-800/70 text-gray-100 p-2 rounded shadow">❯</button>
+
+            <!-- Dots -->
+            <div class="carousel-dots flex justify-center gap-2 mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-16 bg-slate-900">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-100">Contact</h2>
+        <p class="text-slate-300 mb-6">This is a placeholder contact area.</p>
+        <form class="max-w-xl bg-slate-800 p-6 rounded shadow">
+          <label class="block mb-3">
+            <span class="text-sm font-medium text-slate-200">Name</span>
+            <input class="mt-1 block w-full bg-slate-700 text-slate-100 border border-slate-700 rounded px-3 py-2" type="text" />
+          </label>
+          <label class="block mb-3">
+            <span class="text-sm font-medium text-slate-200">Email</span>
+            <input class="mt-1 block w-full bg-slate-700 text-slate-100 border border-slate-700 rounded px-3 py-2" type="email" />
+          </label>
+          <label class="block mb-3">
+            <span class="text-sm font-medium text-slate-200">Message</span>
+            <textarea class="mt-1 block w-full bg-slate-700 text-slate-100 border border-slate-700 rounded px-3 py-2" rows="4"></textarea>
+          </label>
+          <button type="submit" class="px-4 py-2 bg-gradient-to-br from-red-600 to-violet-700 text-white rounded">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-br from-violet-800 to-slate-900 text-gray-200 py-6"></footer>
+    <div class="container mx-auto px-4 text-center">© 2025 Salmon Angelo S. All rights reserved.</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/navHighlight.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
