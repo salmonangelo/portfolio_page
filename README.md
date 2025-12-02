@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Salmon Angelo S. — Portfolio
 
 A minimal, front-end personal portfolio built with HTML5, Tailwind CSS (CDN) and vanilla JavaScript.
@@ -69,3 +70,7 @@ Project purpose: showcase projects, skills and contact info with accessible UI p
 
 ## License
 MIT — feel free to reuse and modify.
+=======
+# portfolio_page
+A minimal, front-end personal portfolio built with HTML5, Tailwind CSS (CDN) and vanilla JavaScript.
+>>>>>>> e0fd8c64224c03719433109bb5b6c3390d4fb58e
