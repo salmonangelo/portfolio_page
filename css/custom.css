@@ -1,6 +1,6 @@
 /* Basic custom utilities and small animations */
 
-/* Smooth fallback if JS scroll not used */
+
 html {
   scroll-behavior: smooth;
 }
